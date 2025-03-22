@@ -85,6 +85,10 @@ const updateAccount = (id: number, account: any) => {
     color: $color-primary;
     border: none;
     cursor: pointer;
+
+    &:hover {
+      background-color: $color-accent-light;
+    }
   }
 }
 </style>

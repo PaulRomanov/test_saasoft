@@ -104,6 +104,10 @@ watch(props.account, (newAccount) => {
     color: $color-font-primary;
     border: none;
     cursor: pointer;
+
+    &:hover {
+      background-color: $color-red-hover;
+    }
   }
 }
 </style>
