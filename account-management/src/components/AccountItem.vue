@@ -17,8 +17,10 @@
       <div class="account-item__password-wrapper" v-if="account.type === 'Локальная'">
         <input class="account-item__input" :type="passwordVisible ? 'text' : 'password'" v-model="account.password" :rules="passwordRules" />
         <button class="account-item__password-toggle" @click="togglePasswordVisibility">
-          <svg v-if="passwordVisible" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
-          <svg v-else xmlns="http://www.w3.org/20://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye-off"><path d="M17.94 17.94a10.07 10.07 0 0 1-4.94 2.06c-7 0-10-7-10-7a9.5 9.5 0 0 1 3.22-5.63M18.36 18.36A9.96 9.96 0 0 0 22 12c0-7-3-7-10-7a9.5 9.5 0 0 0-1.22.12"/><line x1="2" x2="22" y1="2" y2="22"/></svg>
+          <svg  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.41246 3.00177L21.3813 19.9706L21.3831 19.9689L21.3848 19.9706L19.9706 21.3848L16.6137 18.028C15.3568 18.6142 13.8332 19 12 19C4.408 19 2.12632 12.383 2.10444 12.316L2 12L2.10543 11.684C2.11863 11.6417 3.03404 8.98544 5.62047 7.0347L3 4.41423L4.41246 3.00177ZM15.0867 16.5009L13.2895 14.7037C12.8976 14.8934 12.4599 15 12 15C10.358 15 9 13.642 9 12C9 11.5401 9.10665 11.1024 9.29631 10.7105L7.03632 8.45055C5.26898 9.66594 4.41537 11.3098 4.11657 12C4.61587 13.154 6.67774 17 12 17C13.184 17 14.2067 16.8097 15.0867 16.5009Z" fill="black"/>
+            <path d="M9.50022 5.2611C10.2611 5.09454 11.0926 5.00002 12 5.00002C19.592 5.00002 21.8737 11.617 21.8956 11.684L22 12L21.8946 12.316C21.8843 12.349 21.3248 13.9731 19.8511 15.6119L18.4594 14.2203C19.2458 13.3296 19.6859 12.4564 19.8834 12C19.3841 10.846 17.3223 7.00002 12 7.00002C11.7475 7.00002 11.5024 7.00867 11.2644 7.02529L9.50022 5.2611Z" fill="black"/>
+          </svg>
         </button>
       </div>
 
