@@ -1,5 +1,5 @@
 <template>
-  <div class="account-item mb-4">
+  <div class="account-item account-item--mb-4">
     <div class="account-item__content">
       <label class="account-item__label">Метка</label>
       <input class="account-item__input" v-model="account.label" :rules="labelRules" />
@@ -43,10 +43,18 @@ watch(props.account, (newAccount) => {
 </script>
 
 <style scoped lang="scss">
+@import '@/assets/styles/_variables.scss';
+
 .account-item {
+  &--mb-4 {
+    margin-bottom: 1rem;
+  }
+
   &__content {
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid $color-quaternary;
+    background-color: $color-secondary;
+    color: $color-font-primary;
   }
 
   &__label {
@@ -59,13 +67,15 @@ watch(props.account, (newAccount) => {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid $color-quaternary;
+    background-color: $color-tertiary;
+    color: $color-font-secondary;
   }
 
   &__delete-button {
     padding: 10px 20px;
-    background-color: #dc3545;
-    color: white;
+    background-color: $color-red;
+    color: $color-font-primary;
     border: none;
     cursor: pointer;
   }
