@@ -50,7 +50,7 @@ const updateAccount = (id: number, account: any) => {
 </script>
 
 <style scoped lang="scss">
-@import '@/assets/styles/_variables.scss';
+@use '@/assets/styles/_variables.scss' as variables;
 
 .account-form {
   &__container {
@@ -76,18 +76,18 @@ const updateAccount = (id: number, account: any) => {
   &__title {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: $color-font-primary;
+    color: variables.$color-font-primary;
   }
 
   &__add-button {
     padding: 10px 20px;
-    background-color: $color-accent;
-    color: $color-primary;
+    background-color: variables.$color-accent;
+    color: variables.$color-primary;
     border: none;
     cursor: pointer;
 
     &:hover {
-      background-color: $color-accent-light;
+      background-color: variables.$color-accent-light;
     }
   }
 }

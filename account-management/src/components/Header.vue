@@ -12,15 +12,15 @@
 </template>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_variables.scss';
+@use '@/assets/styles/_variables.scss' as variables;
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 16px;
-  background-color: $color-secondary;
-  color: $color-font-primary;
+  background-color: variables.$color-secondary;
+  color: variables.$color-font-primary;
 
   &__left,
   &__right {
@@ -32,12 +32,12 @@
     font-size: 24px;
     font-weight: bold;
     margin-right: 16px;
-    color: $color-font-primary;
+    color: variables.$color-font-primary;
     text-decoration: none;
     transition: color 0.3s ease;
 
     &:hover {
-      color: $color-accent-light;
+      color: variables.$color-accent-light;
     }
   }
 
@@ -46,12 +46,12 @@
   }
 
   &__link {
-    color: $color-accent;
+    color: variables.$color-accent;
     text-decoration: none;
     transition: color 0.3s ease;
 
     &:hover {
-      color: $color-accent-light;
+      color: variables.$color-accent-light;
     }
   }
 }

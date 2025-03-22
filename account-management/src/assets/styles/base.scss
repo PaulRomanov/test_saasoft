@@ -1,10 +1,10 @@
-@import '@/assets/styles/_variables.scss';
+@use '@/assets/styles/_variables.scss' as variables;
 
 body {
-  font-family: sans-serif;
+  font-family: variables.$font-family-main;
   margin: 0;
   padding: 0;
-  background-color: $color-secondary;
+  background-color: variables.$color-secondary;
 }
 
 .container {

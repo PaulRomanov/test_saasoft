@@ -55,7 +55,7 @@ watch(props.account, (newAccount) => {
 </script>
 
 <style scoped lang="scss">
-@import '@/assets/styles/_variables.scss';
+@use '@/assets/styles/_variables.scss' as variables;
 
 .account-item {
   &--mb-4 {
@@ -64,9 +64,9 @@ watch(props.account, (newAccount) => {
 
   &__content {
     padding: 20px;
-    border: 1px solid $color-quaternary;
-    background-color: $color-secondary;
-    color: $color-font-primary;
+    border: 1px solid variables.$color-quaternary;
+    background-color: variables.$color-secondary;
+    color: variables.$color-font-primary;
   }
 
   &__label {
@@ -79,9 +79,9 @@ watch(props.account, (newAccount) => {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid $color-quaternary;
-    background-color: $color-tertiary;
-    color: $color-font-secondary;
+    border: 1px solid variables.$color-quaternary;
+    background-color: variables.$color-tertiary;
+    color: variables.$color-font-secondary;
   }
 
   &__password-wrapper {
@@ -100,13 +100,13 @@ watch(props.account, (newAccount) => {
 
   &__delete-button {
     padding: 10px 20px;
-    background-color: $color-red;
-    color: $color-font-primary;
+    background-color: variables.$color-red;
+    color: variables.$color-font-primary;
     border: none;
     cursor: pointer;
 
     &:hover {
-      background-color: $color-red-hover;
+      background-color: variables.$color-red-hover;
     }
   }
 }
